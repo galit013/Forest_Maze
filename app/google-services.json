@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399734841798",
+    "project_id": "forestmaze-30b31",
+    "storage_bucket": "forestmaze-30b31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399734841798:android:ef47277f3cfbc05ec392c7",
+        "android_client_info": {
+          "package_name": "com.example.forestmaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399734841798-6m3gck7mpvuigb5oqmqmrggie2cap9ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzFYTBlg8BktW-89w3i4uUruN2HXKXBGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399734841798-6m3gck7mpvuigb5oqmqmrggie2cap9ql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

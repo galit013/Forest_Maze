@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img19"
+    tools:context=".IsCorrect">
+
+
+    <ImageView
+        android:id="@+id/birdIV"
+        android:layout_width="113dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/next"
+        app:layout_constraintTop_toBottomOf="@+id/score"
+        app:srcCompat="@drawable/bird" />
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="278dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="450dp"
+        android:ems="10"
+        android:fontFamily="@font/jua"
+        android:text="message"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="276dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:text="explanation"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_title" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="50dp"
+        android:text="score"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/birdIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explanation" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="115dp"
+        android:backgroundTint="@color/green"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:onClick="onClickNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/birdIV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_title" />
+
+    <Button
+        android:id="@+id/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="Try Again"
+        android:textColor="@color/white"
+        app:layout_constraintBaseline_toBaselineOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

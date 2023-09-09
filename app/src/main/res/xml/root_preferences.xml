@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="User settings">
+        <EditTextPreference
+            app:key="user_name"
+            app:title="User Name"
+            app:summary="Change your user name"
+            app:dialogTitle="Enter your new user name" />
+        <Preference
+            app:key="profile_picture"
+            app:title="Profile Picture"
+            app:summary="Change your profile picture" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Sound settings">
+    <SwitchPreferenceCompat
+        app:key="sound"
+        app:title="Sound"
+        app:defaultValue="true"
+        app:summary="Turn sound on or off" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

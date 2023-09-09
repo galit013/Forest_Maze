@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/top_players"
+        android:icon="@drawable/top_players_icon"
+        android:title="TOP PLAYERS" />
+    <item android:id="@+id/how_to_play"
+        android:icon="@drawable/how_to_play_icon"
+        android:title="HOW TO PLAY" />
+    <item android:id="@+id/settings"
+        android:icon="@drawable/settings_icon"
+        android:title="SETTINGS" />
+    <item android:id="@+id/log_out"
+        android:icon="@drawable/log_out_icon"
+        android:title="LOG OUT" />
+
+    </menu>

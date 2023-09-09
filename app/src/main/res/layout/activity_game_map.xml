@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_map"
+    tools:context=".GameMap">
+
+    <ImageView
+        android:id="@+id/locationIcon"
+        android:layout_width="109dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="472dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/userProfileImgView"
+        app:layout_constraintEnd_toStartOf="@+id/userScoreTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/player_location" />
+
+    <ImageView
+        android:id="@+id/userProfileImgView"
+        android:layout_width="81dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/userNameTextView"
+        app:layout_constraintEnd_toStartOf="@+id/playBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationIcon" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="33dp"
+        android:text="username"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileImgView" />
+
+    <TextView
+        android:id="@+id/userScoreTextView"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/locationIcon" />
+
+    <ImageView
+        android:id="@+id/playBtn"
+        android:layout_width="184dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="104dp"
+        android:onClick="onClickPlayBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userProfileImgView"
+        app:layout_constraintTop_toTopOf="@+id/userScoreTextView"
+        app:srcCompat="@drawable/playb" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

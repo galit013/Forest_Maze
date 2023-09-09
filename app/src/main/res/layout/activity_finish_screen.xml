@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img45"
+    tools:context=".FinishScreen">
+
+
+    <TextView
+        android:id="@+id/finishText"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="276dp"
+        android:text="Congratulations! You finished the game. You can rate us and so we'll know how to improve our game or log out and start over!"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/log_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:backgroundTint="@color/green"
+        android:onClick="onClickLogOut"
+        android:text="LOG OUT"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rate_us"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rate_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="97dp"
+        android:backgroundTint="@color/green"
+        android:onClick="onClickRateGame"
+        android:text="RATE US"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/log_out_btn" />
+
+    <TextView
+        android:id="@+id/summary_text"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/finishText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_iv"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/user_name_tv"
+        app:layout_constraintEnd_toEndOf="@+id/user_name_tv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_name_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="86dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="603dp"
+        android:text="name"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_iv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

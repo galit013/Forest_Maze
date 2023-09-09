@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_background"
+    tools:context=".Instructions">
+
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="135dp"
+        android:src="@drawable/leftarrow"
+        app:layout_constraintEnd_toStartOf="@+id/right_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/rightarrow"
+        app:layout_constraintEnd_toStartOf="@+id/escapeBtn"
+        app:layout_constraintStart_toEndOf="@+id/left_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/escapeBtn">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/escapeBtn"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/green"
+        android:onClick="onClickEscape"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/right_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

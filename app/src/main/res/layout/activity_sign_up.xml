@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/userNameCheck"
+        app:layout_constraintStart_toStartOf="@+id/userNameCheck"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/userPasswordCheck"
+        app:layout_constraintStart_toStartOf="@+id/userNameCheck"
+        app:layout_constraintTop_toBottomOf="@+id/userNameCheck" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@color/green"
+        android:onClick="signUp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />
+
+    <ImageView
+        android:id="@+id/imgViewProfile"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordCheck"
+        app:srcCompat="@drawable/empty_profile" />
+
+    <ImageButton
+        android:id="@+id/galleryBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="118dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraBtn"
+        app:layout_constraintEnd_toStartOf="@+id/cameraBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cameraBtn"
+        app:srcCompat="@drawable/galleryb" />
+
+    <ImageButton
+        android:id="@+id/cameraBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="41dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/galleryBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewProfile"
+        app:srcCompat="@drawable/camerab" />
+
+    <TextView
+        android:id="@+id/userNameCheck"
+        android:layout_width="212dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/userPasswordCheck"
+        android:layout_width="206dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:text="Already have an account? Log in here"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
